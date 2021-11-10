@@ -1,22 +1,24 @@
 import React from 'react';
+import { useHistory } from 'react-router';
 import { Link } from 'react-router-dom';
+import useAuth from '../../../hooks/useAuth';
 import defaultUser from '../../../images/default-user.png'
 import logo from '../../../images/logo.png'
 import './Navbar.css';
 
 const Navbar = () => {
-        // const { user, logOut } = useAuth();
-        // // Use History For Login:
-        // const history = useHistory()
+        const { user, logOut } = useAuth();
+        // Use History For Login:
+        const history = useHistory()
 
-        // const handleLogin = () => {
-        //         history.push('/login');
-        // }
+        const handleLogin = () => {
+                history.push('/login');
+        }
         return (
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-bg">
                         <div className="container">
                                 <Link to="/" className="navbar-brand" href="#">
-                                        <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">SKY</span>Lights</span>
+                                        <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">A</span>sia Travel Agency</span>
                                 </Link>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className="navbar-toggler-icon"></span>
@@ -27,35 +29,15 @@ const Navbar = () => {
                                                         <Link to="/home" className="nav-link active fw-bold me-3" aria-current="page">Home</Link>
                                                 </li>
                                                 <li className="nav-item">
-                                                        <Link to="/addNewProduct" className="nav-link active fw-bold me-3" aria-current="page">Add New Product</Link>
+                                                        <Link to="/dashboard" className="nav-link active fw-bold me-3" aria-current="page">
+                                                                {
+                                                                        user?.email ?
+                                                                                'Dashboard' :
+                                                                                ''
+                                                                }
+                                                        </Link>
                                                 </li>
 
-                                                {/* {
-                                                        user?.email ?
-                                                                <li className="nav-item">
-                                                                        <Link to="/myBookings" className="nav-link active fw-bold" aria-current="page">My Bookings</Link>
-                                                                </li>
-                                                                :
-                                                                ''
-                                                }
-
-                                                {
-                                                        user?.email ?
-                                                                <li className="nav-item">
-                                                                        <Link to="/manageAllBookings" className="nav-link active fw-bold" aria-current="page">Manage All Bookings</Link>
-                                                                </li>
-                                                                :
-                                                                ''
-                                                }
-
-                                                {
-                                                        user?.email ?
-                                                                <li className="nav-item">
-                                                                        <Link to="/addNewService" className="nav-link active fw-bold" aria-current="page">Add New Booking</Link>
-                                                                </li>
-                                                                :
-                                                                ''
-                                                }
                                                 <li className="nav-item">
                                                         <p style={{ color: 'orangered' }} className="nav-link active fw-bold">
                                                                 {
@@ -81,7 +63,7 @@ const Navbar = () => {
                                                                         :
                                                                         <button style={{ backgroundColor: 'orangered' }} onClick={handleLogin} className="btn brand-btn fw-bold">Login <i className="fas fa-sign-in-alt"></i></button>
                                                         }
-                                                </li> */}
+                                                </li>
                                         </ul>
                                 </div>
                         </div>
