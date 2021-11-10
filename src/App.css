@@ -1,0 +1,16 @@
+body {
+        font-family: 'Noto Serif', serif;
+}
+
+.brand-color {
+        color: orangered;
+}
+
+.brand-btn {
+        background: orangered;
+        color: white;
+}
+
+.brand-btn:hover {
+        background: orangered;
+}
