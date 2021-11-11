@@ -28,7 +28,7 @@ const Booking = () => {
                 data.fee = service?.fee;
                 data.status = 'Pending';
                 console.log(data)
-                fetch('https://rocky-bayou-98468.herokuapp.com/orders', {
+                fetch('http://localhost:5000/orders', {
                         method: 'POST',
                         headers: { 'content-type': 'application/json' },
                         body: JSON.stringify(data)
@@ -38,7 +38,7 @@ const Booking = () => {
                                 if (result.insertedId) {
                                         alert("Successfully Booked! Have a safe journey!");
                                         reset()
-                                        history.push('/myBookings')
+                                        history.push('/dashboard')
                                 }
                         })
         };
