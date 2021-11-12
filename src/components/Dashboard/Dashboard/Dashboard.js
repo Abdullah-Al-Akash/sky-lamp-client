@@ -18,31 +18,31 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import './Dashboard.css';
 import logo from '../../../images/logo.png';
 import defaultUser from '../../../images/default-user.png';
+import AdminRoute from '../../Login/AdminRoute/AdminRoute';
 
 const Dashboard = () => {
         let { path, url } = useRouteMatch();
-        const { logOut, user } = useAuth();
+        const { logOut, user, admin } = useAuth();
         return (
                 <div className="container-fluid">
                         <div className="row">
-
                                 <div className="col-lg-9">
                                         <Switch>
                                                 <Route exact path={path}>
                                                         <MyOrders />
                                                 </Route>
-                                                <Route path={`${path}/addNewProduct`}>
-                                                        <AddNewProduct></AddNewProduct>
-                                                </Route>
-                                                <Route path={`${path}/manageAllOrders`}>
-                                                        <ManageAllOrders />
-                                                </Route>
                                                 <Route path={`${path}/review`}>
                                                         <Review />
                                                 </Route>
-                                                <Route path={`${path}/makeAdmin`}>
+                                                <AdminRoute path={`${path}/addNewProduct`}>
+                                                        <AddNewProduct></AddNewProduct>
+                                                </AdminRoute>
+                                                <AdminRoute path={`${path}/manageAllOrders`}>
+                                                        <ManageAllOrders />
+                                                </AdminRoute>
+                                                <AdminRoute path={`${path}/makeAdmin`}>
                                                         <MakeAdmin />
-                                                </Route>
+                                                </AdminRoute>
                                                 <Route path={`${url}/pay`}>
                                                         <Pay />
                                                 </Route>
@@ -78,21 +78,25 @@ const Dashboard = () => {
                                                                 Review
                                                         </NavLink>
                                                 </li>
-                                                <li className="dashboard-item">
-                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/makeAdmin`}>
-                                                                Make Admin
-                                                        </NavLink>
-                                                </li>
-                                                <li className="dashboard-item">
-                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/manageAllOrders`}>
-                                                                Manage All Orders
-                                                        </NavLink>
-                                                </li>
-                                                <li className="dashboard-item">
-                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${path}/addNewProduct`}>
-                                                                Add New Products
-                                                        </NavLink>
-                                                </li>
+                                                {
+                                                        admin && <div>
+                                                                <li className="dashboard-item">
+                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/makeAdmin`}>
+                                                                                Make Admin
+                                                                        </NavLink>
+                                                                </li>
+                                                                <li className="dashboard-item">
+                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/manageAllOrders`}>
+                                                                                Manage All Orders
+                                                                        </NavLink>
+                                                                </li>
+                                                                <li className="dashboard-item">
+                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${path}/addNewProduct`}>
+                                                                                Add New Products
+                                                                        </NavLink>
+                                                                </li>
+                                                        </div>
+                                                }
                                                 <li className="dashboard-item">
                                                         <button onClick={logOut} className="btn brand-btn fw-bolder"><i className="fas fa-sign-out-alt"></i> Log Out</button>
                                                 </li>

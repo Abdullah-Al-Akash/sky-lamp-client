@@ -11,6 +11,7 @@ const useFirebase = () => {
         const [password, setPassword] = useState('');
         const [isLogin, setIsLogin] = useState(false);
         const [error, setError] = useState('');
+        const [admin, setAdmin] = useState(false);
 
         const [isLoading, setIsLoading] = useState(true);
 
@@ -127,6 +128,15 @@ const useFirebase = () => {
                         .then()
         }
 
+        // Load Admin Information:
+        useEffect(() => {
+                fetch(`http://localhost:5000/users/${user.email}`)
+                        .then(res => res.json())
+                        .then(data => {
+                                setAdmin(data.admin);
+                        })
+        }, [user.email])
+
         return {
                 user,
                 isLoading,
@@ -138,7 +148,7 @@ const useFirebase = () => {
                 handleRegistration,
                 handleUserLogin,
                 error,
-                setError, setIsLoading, setUserName, saveUser
+                setError, setIsLoading, setUserName, saveUser, admin
         }
 }
 
