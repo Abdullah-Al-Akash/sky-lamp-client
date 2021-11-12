@@ -1,10 +1,10 @@
 .form-section {
-        background-color: orangered;
+        background-color: #FF1493;
         box-shadow: 20px 20px 40px lightgray;
         border-radius: 20px;
 }
 
-.tour-details {
+.product-details {
         box-shadow: 20px 20px 40px lightgray;
         border-radius: 20px;
         padding: 10px;

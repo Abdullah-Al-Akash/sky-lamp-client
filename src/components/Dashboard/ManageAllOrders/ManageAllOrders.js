@@ -40,9 +40,9 @@ const ManageAllOrders = () => {
                         <div className="row text-success mx-auto">
                                 {/* <h4 className="col-1">S.L</h4> */}
                                 <h4 className="col-3 fw-bold">Name</h4>
-                                <h4 className="col-2 fw-bold">Tour Place</h4>
-                                <h4 className="col-2 fw-bold">Cancel Booking</h4>
-                                <h4 className="col-2 fw-bold">Approve</h4>
+                                <h4 className="col-2 fw-bold">Lamp Name</h4>
+                                <h4 className="col-2 fw-bold">Cancel Order</h4>
+                                <h4 className="col-2 fw-bold">Shipped</h4>
                                 <h4 className="col-2 fw-bold">Status</h4>
                         </div>
                         <hr />
@@ -52,7 +52,7 @@ const ManageAllOrders = () => {
                                                 <h6 className="col-3">{booked.name}</h6>
                                                 <h6 className="col-2">{booked.booking}</h6>
                                                 <h6 className="col-2 text-center">
-                                                        <button onClick={() => handleCancelBooking(booked._id)} className="btn">❌</button>
+                                                        <button onClick={() => handleCancelBooking(booked._id)} className="btn btn-danger fw-bolder">Cancel</button>
                                                 </h6>
                                                 <h6 className="col-2 text-center"><Shipped booked={booked}></Shipped></h6>
                                                 <h6 className="col-2">{booked.status}</h6>

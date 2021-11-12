@@ -19,9 +19,8 @@ const Service = (props) => {
                                         </div>
                                         <div className="card-body">
                                                 <h3 className="card-title brand-color fw-bold">{name}</h3>
-                                                <p className="text-start">{description.slice(0, 120)}</p>
+                                                <p className="text-start">{description.slice(0, 100)}</p>
                                         </div>
-                                        <p className="text-start ms-3 text-success ">Family Package</p>
                                         <div className="d-flex h-100 justify-content-between align-items-center p-3 pt-0">
                                                 <h3 className="fw-bold brand-color">${fee}</h3>
                                                 <button onClick={booking} className="btn fw-bold brand-btn align-items-center"><i className="fas fa-calendar-check"></i> Book Now</button>

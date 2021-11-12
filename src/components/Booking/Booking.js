@@ -47,14 +47,13 @@ const Booking = () => {
                 <div>
                         <Navbar />
                         <div className="container booking mt-5 pt-5 pb-5">
-                                <h3 className="text-center fw-bolder mt-5">Please Confirm Booking</h3>
+                                <h3 className="text-center fw-bolder mt-5">Please Confirm Order</h3>
                                 <div className="row pt-5">
-                                        <div className="col-lg-5 tour-details">
+                                        <div className="col-lg-5 product-details">
                                                 <h2 className="brand-color fw-bold text-center">{service.name}</h2>
                                                 <img src={service.img} className="img-fluid p-4" alt="" />
                                                 <div className="d-flex justify-content-between ps-4 pe-4 fw-bold text-success">
                                                         <h3>${service.fee}</h3>
-                                                        <h3>Family Package</h3>
                                                 </div>
                                                 <div className="ps-4 pe-4">
                                                         <p>{service.description}</p>
@@ -73,8 +72,8 @@ const Booking = () => {
                                                                 <input className="form-control" defaultValue={user ? user.email : ''} {...register("email", { required: true })} readOnly />
                                                         </div>
                                                         <div className="mb-3">
-                                                                <label className="form-label">Package</label>
-                                                                <input className="form-control" defaultValue="Family Package" {...register("package", { required: true })} readOnly />
+                                                                <label className="form-label">Category</label>
+                                                                <input className="form-control" defaultValue="Best Choice" {...register("package", { required: true })} readOnly />
                                                         </div>
                                                         <div className="mb-3">
                                                                 <label className="form-label">Your Phone Number</label>
@@ -89,7 +88,7 @@ const Booking = () => {
                                                                 <input className="form-control" {...register("city", { required: true })} />
                                                         </div>
                                                         <div className="d-grid gap-2">
-                                                                <input className="btn btn-dark fw-bold fs-4" type="submit" value="Confirm Booking" />
+                                                                <input className="btn btn-dark fw-bold fs-4" type="submit" value="Confirm Order" />
                                                         </div>
                                                 </form>
                                         </div>

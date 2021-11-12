@@ -3,14 +3,14 @@ body {
 }
 
 .brand-color {
-        color: orangered;
+        color: #FF1493;
 }
 
 .brand-btn {
-        background: orangered;
+        background: #FF1493;
         color: white;
 }
 
 .brand-btn:hover {
-        background: orangered;
+        background: #FF1493;
 }

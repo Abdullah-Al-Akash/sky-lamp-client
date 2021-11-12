@@ -5,12 +5,12 @@ import logo from '../../../images/logo.png'
 
 const Footer = () => {
         return (
-                <div className="footer mt-5">
+                <div className="footer">
                         <div className="container">
                                 <div className="row">
                                         <div className="col-lg-3 pt-5 pb-5">
                                                 <Link to="/" className="navbar-brand" href="#">
-                                                        <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">A</span>sia Travel Agency</span>
+                                                        <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">S</span>ky Lapm</span>
                                                 </Link>
                                                 <br />
                                                 <div className="mt-4 p-2">

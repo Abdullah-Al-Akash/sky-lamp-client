@@ -18,7 +18,7 @@ const Navbar = () => {
                 <nav className="navbar navbar-expand-lg navbar-dark fixed-top navbar-bg">
                         <div className="container">
                                 <Link to="/" className="navbar-brand" href="#">
-                                        <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">A</span>sia Travel Agency</span>
+                                        <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">S</span>ky Lamp</span>
                                 </Link>
                                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                         <span className="navbar-toggler-icon"></span>
@@ -27,6 +27,9 @@ const Navbar = () => {
                                         <ul className="navbar-nav text-center ms-auto mb-2 mb-lg-0">
                                                 <li className="nav-item">
                                                         <Link to="/home" className="nav-link active fw-bold me-3" aria-current="page">Home</Link>
+                                                </li>
+                                                <li className="nav-item">
+                                                        <Link to="/explore" className="nav-link active fw-bold me-3" aria-current="page">Explore More</Link>
                                                 </li>
                                                 <li className="nav-item">
                                                         <Link to="/dashboard" className="nav-link active fw-bold me-3" aria-current="page">
@@ -39,7 +42,7 @@ const Navbar = () => {
                                                 </li>
 
                                                 <li className="nav-item">
-                                                        <p style={{ color: 'orangered' }} className="nav-link active fw-bold">
+                                                        <p style={{ color: '#FF1493' }} className="nav-link active fw-bold">
                                                                 {
                                                                         user?.email ?
                                                                                 user?.displayName :

@@ -9,19 +9,18 @@ const Review = () => {
         const { user } = useAuth();
         console.log(user)
         const onSubmit = data => {
-                console.log(data);
                 // Setup POST Request:
                 axios.post('http://localhost:5000/reviews', data)
                         .then(res => {
                                 if (res.data.insertedId) {
-                                        alert("Review Added");
+                                        alert("Thank You So Much For Your Review");
                                         reset();
                                 }
                         })
         }
         return (
                 <div className="pb-5 new-service">
-                        <h3 className="text-center p-5 fw-bold brand-color text-decoration-underline">Please Add New Service</h3>
+                        <h3 className="text-center p-5 fw-bold brand-color text-decoration-underline">Add Your Respectable Review</h3>
                         <div className="row container ">
                                 <div className="col-lg-12 form-section p-5 mx-auto">
                                         <form onSubmit={handleSubmit(onSubmit)}>
@@ -44,15 +43,10 @@ const Review = () => {
                                                         <input type="number" className="form-control" {...register("rating")} placeholder="Review(Out of 5)" />
                                                 </div>
                                                 <div className="mb-3 d-grid gap-2">
-                                                        <input className="btn btn-dark fw-bold fs-4" type="submit" value="Add New Booking" />
+                                                        <input className="btn btn-dark fw-bold fs-4" type="submit" value="Submit Review" />
                                                 </div>
                                         </form>
                                 </div>
-                                {/* <div className="col-lg-6">
-                                        <div className="d-flex justify-content-center">
-                                                <img src={img} className="img-fluid" alt="" />
-                                        </div>
-                                </div> */}
                         </div>
                 </div>
         );

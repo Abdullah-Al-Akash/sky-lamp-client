@@ -8,7 +8,7 @@
 }
 
 .footer-item:hover {
-        color: orangered;
+        color: #FF1493;
         cursor: pointer;
         text-decoration: underline;
 }

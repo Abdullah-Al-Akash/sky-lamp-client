@@ -5,6 +5,7 @@ import './Services.css'
 
 const Services = () => {
         const [services, setServices] = useState([]);
+        const history = useHistory();
 
         // Load Data From JSON File:
         useEffect(() => {
@@ -13,11 +14,16 @@ const Services = () => {
                         .then(data => setServices(data));
         }, []);
 
+        // Explore More:
+        const exploreMore = () => {
+                history.push('/explore')
+        }
+
         return (
                 <div id="services" className="container mt-5 pt-5 pb-5">
                         <div className="text-center">
-                                <h4 className="fw-bold text-decoration-underline">What We Offer</h4>
-                                <h2 className="fw-bold brand-color">POPULAR PACKAGES</h2>
+                                <h4 className="fw-bold text-decoration-underline">Our Best Sellers</h4>
+                                <h2 className="fw-bold brand-color">POPULAR Choices</h2>
                                 {/* Show Services by Mapping */}
                                 <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
                                         {
@@ -32,6 +38,9 @@ const Services = () => {
                                                                 <img src="https://trails.ca/wp-content/uploads/2020/10/loading-spinner.gif" className="img-fluid" alt="" />
                                                         </div>
                                         }
+                                </div>
+                                <div className="mt-5">
+                                        <button onClick={exploreMore} className="btn brand-btn btn-lg fw-bold">Explore More <i class="fas fa-arrow-right"></i></button>
                                 </div>
                         </div>
 

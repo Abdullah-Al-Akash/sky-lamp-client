@@ -20,11 +20,11 @@ const MyOrders = () => {
         return (
                 <div>
                         <div className="container">
-                                <h3 className="text-center brand-color fw-bold mt-5">My Bookings</h3>
+                                <h3 className="text-center brand-color fw-bold mt-5">My Orders</h3>
                                 <div className="row text-success mt-5 mx-auto">
                                         <h4 className="col-3 fw-bold">Name</h4>
-                                        <h4 className="col-2 fw-bold">Tour Place</h4>
-                                        <h4 className="col-2 fw-bold">Order Cancel</h4>
+                                        <h4 className="col-2 fw-bold">Lamp Name</h4>
+                                        <h4 className="col-2 fw-bold">Cancel Order</h4>
                                         <h4 className="col-2 fw-bold">Status</h4>
                                 </div>
                                 <hr />

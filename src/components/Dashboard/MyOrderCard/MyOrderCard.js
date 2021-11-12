@@ -5,7 +5,7 @@ const MyOrderCard = (props) => {
 
         // Handle Booking Cancel:
         const handleCancelBooking = id => {
-                const response = window.confirm("Are you sure about cancel the tour?")
+                const response = window.confirm("Are you sure about cancel the order?")
                 if (response === true) {
                         const url = `http://localhost:5000/orders/${id}`;
                         fetch(url, {
@@ -27,7 +27,7 @@ const MyOrderCard = (props) => {
                         <h6 className="col-3">{name}</h6>
                         <h6 className="col-2">{booking}</h6>
                         <h6 className="col-2 text-center">
-                                <button onClick={() => handleCancelBooking(_id)} className="btn">❌</button>
+                                <button onClick={() => handleCancelBooking(_id)} className="btn btn-danger fw-bolder">Cancel</button>
                         </h6>
                         <h6 className="col-2">{status}</h6>
                 </div>

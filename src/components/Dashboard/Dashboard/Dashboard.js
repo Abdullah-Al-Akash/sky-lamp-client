@@ -31,27 +31,27 @@ const Dashboard = () => {
                                                 <Route exact path={path}>
                                                         <MyOrders />
                                                 </Route>
-                                                <Route path={`${path}/review`}>
+                                                <Route exact path={`${path}/review`}>
                                                         <Review />
                                                 </Route>
-                                                <AdminRoute path={`${path}/addNewProduct`}>
+                                                <AdminRoute exact path={`${path}/addNewProduct`}>
                                                         <AddNewProduct></AddNewProduct>
                                                 </AdminRoute>
-                                                <AdminRoute path={`${path}/manageAllOrders`}>
+                                                <AdminRoute exact path={`${path}/manageAllOrders`}>
                                                         <ManageAllOrders />
                                                 </AdminRoute>
-                                                <AdminRoute path={`${path}/makeAdmin`}>
+                                                <AdminRoute exact path={`${path}/makeAdmin`}>
                                                         <MakeAdmin />
                                                 </AdminRoute>
-                                                <Route path={`${url}/pay`}>
+                                                <Route exact path={`${url}/pay`}>
                                                         <Pay />
                                                 </Route>
                                         </Switch>
                                 </div>
 
-                                <div className="col-lg-3 bg-dark">
+                                <div className="col-lg-3 bg-dark pt-3">
                                         <Link to="/" className="navbar-brand" href="#">
-                                                <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">A</span>sia Travel Agency</span>
+                                                <img src={logo} className="img-fluid rounded-circle m-0 p-0" width="70" alt="" /> <span className="fw-bold m-0 p-0 text-white fs-6"><span className="fw-bold fs-2 brand-color">S</span>ky Lamp</span>
                                         </Link>
                                         <ul className="mt-5">
                                                 <li className="dashboard-item">
@@ -69,29 +69,44 @@ const Dashboard = () => {
                                                         </NavLink>
                                                 </li>
                                                 <li className="dashboard-item">
-                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/pay`}>
+                                                        <NavLink activeStyle={{
+                                                                fontWeight: "bold",
+                                                                color: "#FF1493"
+                                                        }} style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/pay`}>
                                                                 Pay
                                                         </NavLink>
                                                 </li>
                                                 <li className="dashboard-item">
-                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/review`}>
+                                                        <NavLink activeStyle={{
+                                                                fontWeight: "bold",
+                                                                color: "#FF1493"
+                                                        }} style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/review`}>
                                                                 Review
                                                         </NavLink>
                                                 </li>
                                                 {
                                                         admin && <div>
                                                                 <li className="dashboard-item">
-                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/makeAdmin`}>
+                                                                        <NavLink activeStyle={{
+                                                                                fontWeight: "bold",
+                                                                                color: "#FF1493"
+                                                                        }} style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/makeAdmin`}>
                                                                                 Make Admin
                                                                         </NavLink>
                                                                 </li>
                                                                 <li className="dashboard-item">
-                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/manageAllOrders`}>
+                                                                        <NavLink activeStyle={{
+                                                                                fontWeight: "bold",
+                                                                                color: "#FF1493"
+                                                                        }} style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}/manageAllOrders`}>
                                                                                 Manage All Orders
                                                                         </NavLink>
                                                                 </li>
                                                                 <li className="dashboard-item">
-                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${path}/addNewProduct`}>
+                                                                        <NavLink activeStyle={{
+                                                                                fontWeight: "bold",
+                                                                                color: "#FF1493"
+                                                                        }} style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${path}/addNewProduct`}>
                                                                                 Add New Products
                                                                         </NavLink>
                                                                 </li>

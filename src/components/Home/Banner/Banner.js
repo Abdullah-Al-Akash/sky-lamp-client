@@ -6,8 +6,8 @@ const Banner = () => {
                 <div className="banner">
                         <div className="text-light p-2">
                                 <div className="">
-                                        <h1 className="m-0 p-0 brand-color">Explore</h1>
-                                        <h2 className="m-0 p-0">Your Travel</h2>
+                                        <h1 className="m-0 p-0 brand-color">Find</h1>
+                                        <h2 className="m-0 p-0">Your Table Lamp</h2>
                                         <p className="pt-4">Discover your next great adventure, become an explorer to get started!</p>
                                 </div>
                                 <div className="mt-4">

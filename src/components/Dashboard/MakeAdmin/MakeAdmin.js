@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './MakeAdmin.css';
 
 const MakeAdmin = () => {
         const [email, setEmail] = useState('');
@@ -21,12 +22,16 @@ const MakeAdmin = () => {
                         })
         }
         return (
-                <div>
-                        <h3>Make An Admin</h3>
-                        <form onSubmit={handleAdmin}>
-                                <input onBlur={handleOnblur} type="email" />
-                                <input type="submit" value="Make An Admin" />
-                        </form>
+                <div className="d-flex justify-content-center align-items-center h-100">
+                        <div className="makeAdmin">
+                                <h3 className="m-5 brand-color fw-bold">Make An Admin</h3>
+                                <form onSubmit={handleAdmin}>
+                                        <input onBlur={handleOnblur} type="email" className="form-control" placeholder="Enter Email Address" />
+                                        <div className="d-grid gap-2">
+                                                <input type="submit" value="Make An Admin" className="btn brand-btn mt-1 fw-bold" />
+                                        </div>
+                                </form>
+                        </div>
                 </div>
         );
 };

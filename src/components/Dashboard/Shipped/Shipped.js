@@ -22,7 +22,7 @@ const Shipped = (props) => {
         }
         return (
                 <div>
-                        <button onClick={() => handleStatus(_id)} className="btn">✅</button>
+                        <button onClick={() => handleStatus(_id)} className="btn btn-success fw-bold">Shipped</button>
                 </div>
         );
 };

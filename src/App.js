@@ -15,6 +15,7 @@ import AuthProvider from './contexts/AuthProvider';
 import PrivateRoute from './Components/Login/PrivateRoute/PrivateRoute';
 import NotFound from './Components/NotFound/NotFound';
 import Dashboard from './Components/Dashboard/Dashboard/Dashboard';
+import ExploreMore from './Components/ExploreMore/ExploreMore';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
             </Route>
             <Route path="/home">
               <Home />
+            </Route>
+            <Route path="/explore">
+              <ExploreMore />
             </Route>
             <PrivateRoute path="/dashboard">
               <Dashboard />

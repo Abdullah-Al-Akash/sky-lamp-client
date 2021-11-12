@@ -5,6 +5,7 @@ import './Login.css';
 import img from '../../../images/login-img.png';
 import CreateAccountForm from '../CreateAccountForm/CreateAccountForm';
 import useAuth from '../../../hooks/useAuth';
+import Navbar from '../../Shared/Navbar/Navbar';
 
 const Login = () => {
         const { handleEmail, handlePassword, signInWithGoogle, error, handleUserLogin, saveUser } = useAuth();
@@ -40,6 +41,7 @@ const Login = () => {
 
         return (
                 <div>
+                        <Navbar />
                         {
                                 !form ?
                                         <div className="container mt-5 pt-5 ">

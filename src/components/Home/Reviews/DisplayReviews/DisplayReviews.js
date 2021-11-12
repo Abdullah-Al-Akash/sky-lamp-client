@@ -21,7 +21,6 @@ const DisplayReviews = () => {
                                         key={review._id}
                                         review={review}
                                 >
-
                                 </ReviewItem>)
                         }
                 </Carousel>

@@ -18,36 +18,37 @@ const AddNewProduct = () => {
                         })
         }
         return (
-                <div className="container mt-5 pt-5 pb-5 new-service">
-                        <h3 className="text-center p-5 fw-bold brand-color text-decoration-underline">Please Add New Service</h3>
+                <div className="container pb-5 new-service">
+                        <h3 className="text-center p-5 fw-bold brand-color text-decoration-underline">Please Add New Product</h3>
                         <div className="row">
+                                <div className="col-lg-3">
+
+                                </div>
                                 <div className="col-lg-6 form-section p-5">
                                         <form onSubmit={handleSubmit(onSubmit)}>
                                                 <div className="mb-3">
-                                                        <label className="form-label fw-bold fs-5">Tour Area</label>
-                                                        <input className="form-control" {...register("name", { required: true })} placeholder="Tour Area" />
+                                                        <label className="form-label fw-bold fs-5">Product Name</label>
+                                                        <input className="form-control" {...register("name", { required: true })} placeholder="Product Name" />
                                                 </div>
                                                 <div className="mb-3">
-                                                        <label className="form-label fw-bold fs-5">Place Details</label>
-                                                        <input className="form-control" {...register("description")} placeholder="Place Details" />
+                                                        <label className="form-label fw-bold fs-5">Product Details</label>
+                                                        <input className="form-control" {...register("description")} placeholder="Product Details" />
                                                 </div>
                                                 <div className="mb-3">
-                                                        <label className="form-label fw-bold fs-5">Tour Fee</label>
-                                                        <input className="form-control" type="number" {...register("fee")} placeholder="Fee" />
+                                                        <label className="form-label fw-bold fs-5">Product Charge</label>
+                                                        <input className="form-control" type="number" {...register("fee")} placeholder="Product Charge" />
                                                 </div>
                                                 <div className="mb-3">
-                                                        <label className="form-label fw-bold fs-5">Provide Tour Places Image</label>
+                                                        <label className="form-label fw-bold fs-5">Provide Products Image</label>
                                                         <input className="form-control" {...register("img")} placeholder="Image URL" />
                                                 </div>
                                                 <div className="mb-3 d-grid gap-2">
-                                                        <input className="btn btn-dark fw-bold fs-4" type="submit" value="Add New Booking" />
+                                                        <input className="btn btn-dark fw-bold fs-4" type="submit" value="Add New Product" />
                                                 </div>
                                         </form>
                                 </div>
-                                <div className="col-lg-6">
-                                        <div className="d-flex justify-content-center">
-                                                <img src={img} className="img-fluid" alt="" />
-                                        </div>
+                                <div className="col-lg-3">
+
                                 </div>
                         </div>
                 </div>

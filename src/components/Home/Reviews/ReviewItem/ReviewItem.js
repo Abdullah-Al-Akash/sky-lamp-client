@@ -1,16 +1,24 @@
 import React from 'react';
+import Rating from 'react-rating';
+import './ReviewItem.css';
 
 const ReviewItem = (props) => {
         const { name, review, rating, img } = props.review;
-        return (<div>
-                <img src="https://wallpapercave.com/wp/wp2665743.jpg" />
-                <div className="legend">
-                        <img src={img} className="img-fluid rounded-circle" style={{ width: '200px', height: '200px' }} alt="" />
-                        <h3>{name}</h3>
-                        <p>{review}</p>
-                        <p>{rating}</p>
+        return (
+                <div>
+                        <img src="https://gifimages.us/wp-content/uploads/2021/07/Light-Pink-Background-47.jpg" className="img-fluid" style={{ height: '750px' }} alt="Rating" />
+                        <div style={{ marginTop: '-680px' }} className="pb-5">
+                                <img src={img} className="img-fluid rounded-circle mb-3" style={{ width: '180px', height: '180px' }} alt="" />
+                                <h3>{name}</h3>
+                                <p>{review}</p>
+                                <Rating
+                                        initialRating={rating}
+                                        emptySymbol="far fa-star fa-2x rate"
+                                        fullSymbol="fas fa-star fa-2x rate"
+                                        readonly
+                                />
+                        </div>
                 </div>
-        </div>
         );
 };
 
