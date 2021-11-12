@@ -70,7 +70,7 @@ const useFirebase = () => {
                         return;
                 }
                 console.log(email, password, name)
-                return createUserWithEmailAndPassword(auth, email, password)
+                return createUserWithEmailAndPassword(auth, email, password);
                 // .then(result => {
                 //         console.log(result.user)
                 //         setError('')
@@ -82,7 +82,7 @@ const useFirebase = () => {
                 //         setError(error.message);
                 // })
                 // .finally(() => setIsLoading(false));
-        }
+        };
 
         // Login User:
         const handleUserLogin = () => {
@@ -115,6 +115,18 @@ const useFirebase = () => {
                         })
                         .finally(() => { setIsLoading(false) })
         }
+
+        // Save User In Database:
+        const saveUser = (email, displayName, method) => {
+                const user = { email, displayName };
+                fetch('http://localhost:5000/users', {
+                        method: method,
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(user)
+                })
+                        .then()
+        }
+
         return {
                 user,
                 isLoading,
@@ -126,7 +138,7 @@ const useFirebase = () => {
                 handleRegistration,
                 handleUserLogin,
                 error,
-                setError, setIsLoading, setUserName,
+                setError, setIsLoading, setUserName, saveUser
         }
 }
 

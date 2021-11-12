@@ -21,7 +21,6 @@ function App() {
     <div className="App">
       <AuthProvider>
         <Router>
-          <Navbar />
           <Switch>
             <Route exact path="/">
               <Home />

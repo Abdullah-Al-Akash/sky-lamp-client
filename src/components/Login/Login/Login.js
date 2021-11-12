@@ -7,7 +7,7 @@ import CreateAccountForm from '../CreateAccountForm/CreateAccountForm';
 import useAuth from '../../../hooks/useAuth';
 
 const Login = () => {
-        const { handleEmail, handlePassword, signInWithGoogle, error, handleUserLogin } = useAuth();
+        const { handleEmail, handlePassword, signInWithGoogle, error, handleUserLogin, saveUser } = useAuth();
 
         const location = useLocation();
         const history = useHistory();
@@ -17,7 +17,9 @@ const Login = () => {
         // Google Login:
         const handleGoogleLogin = () => {
                 signInWithGoogle()
-                        .then(() => {
+                        .then((result) => {
+                                // Save User in Database:
+                                saveUser(result.user?.email, result.user?.displayName, 'PUT');
                                 history.push(redirect_URI);
                         })
         }

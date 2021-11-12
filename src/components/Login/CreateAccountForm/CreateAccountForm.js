@@ -5,7 +5,7 @@ import img from '../../../images/login-img.png'
 import Login from '../Login/Login';
 
 const CreateAccountForm = () => {
-        const { handleName, handleEmail, handlePassword, error, handleRegistration, signInWithGoogle, setError, setIsLoading, setUserName, } = useAuth();
+        const { handleName, handleEmail, handlePassword, error, handleRegistration, signInWithGoogle, setError, setIsLoading, setUserName, saveUser } = useAuth();
 
         const location = useLocation();
         const history = useHistory();
@@ -16,6 +16,8 @@ const CreateAccountForm = () => {
                 handleRegistration()
                         .then(result => {
                                 console.log(result.user)
+                                // Save User in Database:
+                                saveUser(result.user?.email, result.user?.displayName, 'POST');
                                 setError('')
                                 setUserName()
                                 history.push(redirect_URI);
@@ -29,7 +31,9 @@ const CreateAccountForm = () => {
         // Google Login:
         const handleGoogleLogin = () => {
                 signInWithGoogle()
-                        .then(() => {
+                        .then((result) => {
+                                // Save User in Database:
+                                saveUser(result.user?.email, result.user?.displayName, 'PUT');
                                 history.push(redirect_URI);
                         })
         }

@@ -35,7 +35,7 @@ const ManageAllOrders = () => {
         }
 
         return (
-                <div className="pt-5 mt-5">
+                <div className="">
                         <h4 className="text-center p-5 fw-bold brand-color">Manage All Bookings Summary</h4>
                         <div className="row text-success mx-auto">
                                 {/* <h4 className="col-1">S.L</h4> */}
