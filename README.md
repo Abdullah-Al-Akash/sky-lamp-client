@@ -1,4 +1,4 @@
-# Asia Travel Agency
+# Sky Lamp
 
 Live Link: <a href="https://sky-lamp.web.app/">SKY Lamp</a><br/>
 Live Code Link: <a href="https://github.com/programming-hero-web-course-4/niche-website-client-side-Abdullah-Al-Akash">Live Code Link</a><br/>
