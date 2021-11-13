@@ -29,6 +29,10 @@ const Review = () => {
                                                         <input className="form-control" defaultValue={user ? user.displayName : ''} {...register("name", { required: true })} readOnly />
                                                 </div>
                                                 <div className="mb-3">
+                                                        <label className="form-label fw-bold fs-5">Your Email</label>
+                                                        <input className="form-control" defaultValue={user ? user.email : ''} {...register("email", { required: true })} readOnly />
+                                                </div>
+                                                <div className="mb-3">
                                                         <label className="form-label fw-bold fs-5">Your Image Link</label>
                                                         <input className="form-control" {...register("img")} defaultValue={
                                                                 user?.photoURL ? user.photoURL : 'https://i.ibb.co/mqmyxwX/default-user.png'

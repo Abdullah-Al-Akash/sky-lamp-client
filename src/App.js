@@ -32,7 +32,7 @@ function App() {
             <Route path="/explore">
               <ExploreMore />
             </Route>
-            <PrivateRoute path="/dashboard">
+            <PrivateRoute path='/dashboard'>
               <Dashboard />
             </PrivateRoute>
             <PrivateRoute path="/booking/:id">
