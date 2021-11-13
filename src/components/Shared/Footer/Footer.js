@@ -24,7 +24,7 @@ const Footer = () => {
                                                 <h6 className="p-0 m-0 footer-item">About Us</h6>
                                                 <h6 className="p-0 m-0 footer-item">Vision & Mission</h6>
                                                 <h6 className="p-0 m-0 footer-item">Leadership</h6>
-                                                <h6 className="p-0 m-0 footer-item">Tour Area</h6>
+                                                <h6 className="p-0 m-0 footer-item">Our Area</h6>
                                                 <h6 className="p-0 m-0 footer-item">News & Article</h6>
                                         </div>
                                         <div className="col-lg-3 pt-5 pb-5">

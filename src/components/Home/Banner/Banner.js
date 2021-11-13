@@ -12,7 +12,7 @@ const Banner = () => {
                                 </div>
                                 <div className="mt-4">
                                         <a href="#services">
-                                                <button className="btn btn-lg fw-bold brand-btn">Book Now <i className="fas fa-arrow-alt-circle-right"></i></button>
+                                                <button className="btn btn-lg fw-bold brand-btn">Check Now <i className="fas fa-arrow-alt-circle-right"></i></button>
                                         </a>
                                 </div>
                         </div>

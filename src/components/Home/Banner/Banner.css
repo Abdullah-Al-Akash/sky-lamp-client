@@ -14,13 +14,13 @@
 
 @keyframes animate {
         0%, 100% {
-                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('http://cdn.home-designing.com/wp-content/uploads/2015/09/clamp-lamp.jpg');
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/2MV86RM/banner1.png');
         }
         40% {
-                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://m.media-amazon.com/images/S/aplus-media/sc/22f53f2b-84b6-4afc-b3b1-f63e1850b2a1.__CR0,0,970,600_PT0_SX970_V1___.jfif');
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/cbttHZ2/banner2.png');
         }
         75% {
-                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://ae01.alicdn.com/kf/HTB1Y3u5bojrK1RkHFNRq6ySvpXaL/Girl-table-lamp-with-Lampshade-Kids-room-Study-room-Bedroom-unique-bedside-lamp-Crystal-Lamp-Body.jpg');
+                background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ibb.co/QrsfxxR/banner3.png');
         }
 }
 
