@@ -12,7 +12,7 @@ const AddNewProduct = () => {
                 axios.post('https://sky-lamp.herokuapp.com/products', data)
                         .then(res => {
                                 if (res.data.insertedId) {
-                                        alert("Added New Service Successfully");
+                                        alert("Added New Product Successfully");
                                         reset();
                                 }
                         })
@@ -35,7 +35,7 @@ const AddNewProduct = () => {
                                                         <input className="form-control" {...register("description")} placeholder="Product Details" />
                                                 </div>
                                                 <div className="mb-3">
-                                                        <label className="form-label fw-bold fs-5">Product Charge</label>
+                                                        <label className="form-label fw-bold fs-5">Product Price</label>
                                                         <input className="form-control" type="number" {...register("fee")} placeholder="Product Charge" />
                                                 </div>
                                                 <div className="mb-3">

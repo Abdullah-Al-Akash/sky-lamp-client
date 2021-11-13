@@ -71,8 +71,14 @@ const Dashboard = () => {
 
                                                         }
                                                 </li>
+
                                                 {
                                                         !admin && <div>
+                                                                <li className="dashboard-item">
+                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to="/">
+                                                                                Home
+                                                                        </NavLink>
+                                                                </li>
                                                                 <li className="dashboard-item">
                                                                         <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to={`${url}`}>
                                                                                 My Orders
@@ -102,6 +108,11 @@ const Dashboard = () => {
                                                                         <h5 style={{ textDecoration: 'none', color: 'greenYellow', fontWeight: 'bold' }}>
                                                                                 Admin
                                                                         </h5>
+                                                                </li>
+                                                                <li className="dashboard-item">
+                                                                        <NavLink style={{ textDecoration: 'none', color: 'white' }} className="dashboard-link" to="/">
+                                                                                Home
+                                                                        </NavLink>
                                                                 </li>
                                                                 <li className="dashboard-item">
                                                                         <NavLink activeStyle={{

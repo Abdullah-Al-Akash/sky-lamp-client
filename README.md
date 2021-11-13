@@ -77,10 +77,7 @@ Server Code Link: <a href="https://github.com/programming-hero-web-course-4/nich
                 And Mainly Node.js, express for Backend Code
         </li>
 </ul>
-<br>
-<h5>In below, I have shared Home Page Screenshot--</h5>
-<br>
-<img src="https://i.ibb.co/Ydk0x5C/home-page-sky-lamp.png" alt="Sky Lamp Home Page">
+
 <br/>
 <h5>And This is Manage All Orders Admin Page:</h5>
 <br>

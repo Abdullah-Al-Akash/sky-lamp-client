@@ -11,7 +11,7 @@ const About = () => {
                                 </div>
                                 <div className="col-lg-6 mt-5 pt-5">
                                         <div className="">
-                                                <h4 className="">About SKY Lamp</h4>
+                                                <h4 className="fw-bold">About SKY Lamp</h4>
                                                 <h2 className="fw-bold brand-color">World Best <br /> Table Lamp Company <br /> Since 2015.</h2>
                                         </div>
                                         <p className="pe-5 pt-3">Our style guides help you discover the look you wish to achieve, and make finding the perfect lighting fixture easier and more enjoyable.

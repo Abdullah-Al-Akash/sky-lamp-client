@@ -16,7 +16,7 @@ const DisplayReviews = () => {
         }, [])
         return (
                 <>
-                        <h2 className="brand-color text-center mt-5 pt-5 pb-5 fw-bold">See Our Customer Reviews</h2>
+                        <h2 className="brand-color text-center mt-5 pt-5 pb-5 fw-bold">See Our Customers Reviews</h2>
                         <Carousel showArrows={true} >
                                 {
                                         reviews.map(review => <ReviewItem

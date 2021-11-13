@@ -23,7 +23,7 @@ const MakeAdmin = () => {
                                         alert("Successfully Make New Admin");
                                 }
                                 if (data.modifiedCount == 0) {
-                                        alert("Something Went Wrong!");
+                                        alert("Something Went Wrong! Try Again");
                                 }
                         })
         }
