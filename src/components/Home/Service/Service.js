@@ -23,7 +23,7 @@ const Service = (props) => {
                                         </div>
                                         <div className="d-flex h-100 justify-content-between align-items-center p-3 pt-0">
                                                 <h3 className="fw-bold brand-color">${fee}</h3>
-                                                <button onClick={booking} className="btn fw-bold brand-btn align-items-center"><i className="fas fa-calendar-check"></i> Book Now</button>
+                                                <button onClick={booking} className="btn fw-bold brand-btn align-items-center"><i className="fas fa-calendar-check"></i> Order Now</button>
                                         </div>
                                 </div>
                         </div>

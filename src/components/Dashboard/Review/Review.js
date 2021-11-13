@@ -10,7 +10,7 @@ const Review = () => {
         console.log(user)
         const onSubmit = data => {
                 // Setup POST Request:
-                axios.post('http://localhost:5000/reviews', data)
+                axios.post('https://sky-lamp.herokuapp.com/reviews', data)
                         .then(res => {
                                 if (res.data.insertedId) {
                                         alert("Thank You So Much For Your Review");

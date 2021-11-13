@@ -8,7 +8,7 @@ const MyOrders = () => {
 
         // Load All Orders From Backend:
         useEffect(() => {
-                fetch('http://localhost:5000/orders')
+                fetch('https://sky-lamp.herokuapp.com/orders')
                         .then(res => res.json())
                         .then(data => {
                                 setBooking(data)
@@ -34,7 +34,6 @@ const MyOrders = () => {
                                                 key={booked._id}
                                                 booked={booked}
                                         >
-
                                         </MyOrderCard>)
                                 }
                         </div>

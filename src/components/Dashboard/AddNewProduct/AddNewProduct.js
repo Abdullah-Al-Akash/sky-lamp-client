@@ -9,7 +9,7 @@ const AddNewProduct = () => {
         const onSubmit = data => {
                 console.log(data);
                 // Setup POST Request:
-                axios.post('http://localhost:5000/products', data)
+                axios.post('https://sky-lamp.herokuapp.com/products', data)
                         .then(res => {
                                 if (res.data.insertedId) {
                                         alert("Added New Service Successfully");

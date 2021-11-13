@@ -7,7 +7,7 @@ const ExploreMore = () => {
 
         // Load Data From JSON File:
         useEffect(() => {
-                fetch('http://localhost:5000/products')
+                fetch('https://sky-lamp.herokuapp.com/products')
                         .then(res => res.json())
                         .then(data => setServices(data));
         }, []);
@@ -15,7 +15,7 @@ const ExploreMore = () => {
                 <>
                         <Navbar />
                         <div id="services" className="container mt-5 pt-5 pb-5">
-                                <div className="text-center">
+                                <div className="text-center pb-5 mt-5">
                                         <h4 className="fw-bold text-decoration-underline">Our Best Sellers</h4>
                                         <h2 className="fw-bold brand-color">POPULAR Choices</h2>
                                         {/* Show Services by Mapping */}
@@ -34,7 +34,6 @@ const ExploreMore = () => {
                                                 }
                                         </div>
                                 </div>
-
                         </div>
                 </>
         );

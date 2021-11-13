@@ -7,7 +7,7 @@ const DisplayReviews = () => {
         const [reviews, setReviews] = useState([]);
 
         useEffect(() => {
-                fetch('http://localhost:5000/reviews')
+                fetch('https://sky-lamp.herokuapp.com/reviews')
                         .then(res => res.json())
                         .then(data => {
                                 console.log(data)
@@ -15,15 +15,18 @@ const DisplayReviews = () => {
                         });
         }, [])
         return (
-                <Carousel showArrows={true} >
-                        {
-                                reviews.map(review => <ReviewItem
-                                        key={review._id}
-                                        review={review}
-                                >
-                                </ReviewItem>)
-                        }
-                </Carousel>
+                <>
+                        <h2 className="brand-color text-center mt-5 pt-5 pb-5 fw-bold">See Our Customer Reviews</h2>
+                        <Carousel showArrows={true} >
+                                {
+                                        reviews.map(review => <ReviewItem
+                                                key={review._id}
+                                                review={review}
+                                        >
+                                        </ReviewItem>)
+                                }
+                        </Carousel>
+                </>
         );
 };
 

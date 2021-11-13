@@ -5,7 +5,7 @@ const Shipped = (props) => {
         const { booked } = props;
         const { _id } = props.booked;
         const handleStatus = id => {
-                const url = `http://localhost:5000/orders/${id}`;
+                const url = `https://sky-lamp.herokuapp.com/orders/${id}`;
                 fetch(url, {
                         method: 'PUT',
                         headers: {

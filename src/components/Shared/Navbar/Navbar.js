@@ -64,7 +64,7 @@ const Navbar = () => {
                                                                 user?.email ?
                                                                         <button onClick={logOut} className="btn brand-btn fw-bolder"><i className="fas fa-sign-out-alt"></i> Log Out</button>
                                                                         :
-                                                                        <button style={{ backgroundColor: 'orangered' }} onClick={handleLogin} className="btn brand-btn fw-bold">Login <i className="fas fa-sign-in-alt"></i></button>
+                                                                        <button style={{ backgroundColor: '' }} onClick={handleLogin} className="btn brand-btn fw-bold">Login <i className="fas fa-sign-in-alt"></i></button>
                                                         }
                                                 </li>
                                         </ul>

@@ -8,8 +8,8 @@ const ReviewItem = (props) => {
                 <div>
                         <img src="https://gifimages.us/wp-content/uploads/2021/07/Light-Pink-Background-47.jpg" className="img-fluid" style={{ height: '750px' }} alt="Rating" />
                         <div style={{ marginTop: '-680px' }} className="pb-5">
-                                <img src={img} className="img-fluid rounded-circle mb-3" style={{ width: '180px', height: '180px' }} alt="" />
-                                <h3>{name}</h3>
+                                <img src={img} className="img-fluid rounded-circle mb-3 border border-dark border-3" style={{ width: '170px', height: '170px' }} alt="" />
+                                <h3 className="fw-bold pb-3 mt-3">{name}</h3>
                                 <p>{review}</p>
                                 <Rating
                                         initialRating={rating}

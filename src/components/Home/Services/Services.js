@@ -9,7 +9,7 @@ const Services = () => {
 
         // Load Data From JSON File:
         useEffect(() => {
-                fetch('http://localhost:5000/products')
+                fetch('https://sky-lamp.herokuapp.com/products')
                         .then(res => res.json())
                         .then(data => setServices(data));
         }, []);
@@ -40,7 +40,7 @@ const Services = () => {
                                         }
                                 </div>
                                 <div className="mt-5">
-                                        <button onClick={exploreMore} className="btn brand-btn btn-lg fw-bold">Explore More <i class="fas fa-arrow-right"></i></button>
+                                        <button onClick={exploreMore} className="btn btn-dark btn-lg fw-bold">Explore More <i className="fas fa-arrow-right"></i></button>
                                 </div>
                         </div>
 

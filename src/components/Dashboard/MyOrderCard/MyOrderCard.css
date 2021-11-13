@@ -1,0 +1,13 @@
+.Shipped {
+        background-color: rgb(193, 245, 193);
+        padding: 5px;
+        border-radius: 5px;
+        color: green;
+}
+
+.Pending {
+        background-color: rgb(250, 219, 219);
+        padding: 5px;
+        border-radius: 5px;
+        color: red;
+}

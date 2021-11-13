@@ -32,8 +32,8 @@ const Footer = () => {
                                                 <h6 className="p-0 m-0 footer-item">Help Center</h6>
                                                 <h6 className="p-0 m-0 footer-item">FAQ</h6>
                                                 <h6 className="p-0 m-0 footer-item">Contact Us</h6>
-                                                <h6 className="p-0 m-0 footer-item">Tickets</h6>
-                                                <h6 className="p-0 m-0 footer-item">Get Booking</h6>
+                                                <h6 className="p-0 m-0 footer-item">Orders</h6>
+                                                <h6 className="p-0 m-0 footer-item">Get Order</h6>
                                         </div>
                                         <div className="col-lg-3 pt-5 pb-5">
                                                 <div>
@@ -45,7 +45,7 @@ const Footer = () => {
                                                 </div>
                                                 <div className="d-flex pt-2">
                                                         <i className="fas fa-envelope pt-1 brand-color"></i>
-                                                        <h6 className="ps-3">support@asiatravelagency.com</h6>
+                                                        <h6 className="ps-3">support@skylamp.com</h6>
                                                 </div>
                                                 <div className="d-flex pt-2">
                                                         <i className="fas fa-phone-alt pt-1 brand-color"></i>
@@ -55,8 +55,8 @@ const Footer = () => {
                                         </div>
                                 </div>
                                 <div className="text-center pb-5">
-                                        <p className="p-0 m-0">Copyright © 2021 ||Asia-Travel-Agency.web.app</p>
-                                        <small>made by <span className="fw-bold  brand-color">Abdullah Al Akash</span></small>
+                                        <p className="p-0 m-0">Copyright © 2021 ||Sky-Lamp.web.app</p>
+                                        <small>made by <span className="brand-color">Abdullah Al Akash</span></small>
                                 </div>
                         </div>
                 </div>

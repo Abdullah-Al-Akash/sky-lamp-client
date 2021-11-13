@@ -14,7 +14,7 @@ const Booking = () => {
 
         // Load Data From Server Site:
         useEffect(() => {
-                fetch(`http://localhost:5000/products/${id}`)
+                fetch(`https://sky-lamp.herokuapp.com/products/${id}`)
                         .then(res => res.json())
                         .then(data => setService(data))
         }, [])
@@ -29,7 +29,7 @@ const Booking = () => {
                 data.fee = service?.fee;
                 data.status = 'Pending';
                 console.log(data)
-                fetch('http://localhost:5000/orders', {
+                fetch('https://sky-lamp.herokuapp.com/orders', {
                         method: 'POST',
                         headers: { 'content-type': 'application/json' },
                         body: JSON.stringify(data)

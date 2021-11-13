@@ -15,8 +15,8 @@ const Home = () => {
                         <Banner />
                         <About />
                         <Services />
-                        <WhyChooseUs />
                         <DisplayReviews />
+                        <WhyChooseUs />
                 </div>
         );
 };

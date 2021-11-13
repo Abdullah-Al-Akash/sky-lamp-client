@@ -11,7 +11,7 @@ const MakeAdmin = () => {
         const handleAdmin = e => {
                 e.preventDefault();
                 const user = { email };
-                fetch('http://localhost:5000/users/admin', {
+                fetch('https://sky-lamp.herokuapp.com/users/admin', {
                         method: 'PUT',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify(user)
@@ -19,6 +19,12 @@ const MakeAdmin = () => {
                         .then(res => res.json())
                         .then(data => {
                                 console.log(data)
+                                if (data.modifiedCount > 0) {
+                                        alert("Successfully Make New Admin");
+                                }
+                                if (data.modifiedCount == 0) {
+                                        alert("Something Went Wrong!");
+                                }
                         })
         }
         return (
@@ -28,7 +34,7 @@ const MakeAdmin = () => {
                                 <form onSubmit={handleAdmin}>
                                         <input onBlur={handleOnblur} type="email" className="form-control" placeholder="Enter Email Address" />
                                         <div className="d-grid gap-2">
-                                                <input type="submit" value="Make An Admin" className="btn brand-btn mt-1 fw-bold" />
+                                                <input type="submit" value="Make An Admin" className="btn brand-btn mt-1 fw-bold" defaultValue="Reset" />
                                         </div>
                                 </form>
                         </div>
