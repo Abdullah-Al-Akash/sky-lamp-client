@@ -37,7 +37,7 @@ const Booking = () => {
                         .then(res => res.json())
                         .then(result => {
                                 if (result.insertedId) {
-                                        alert("Successfully Booked! Have a safe journey!");
+                                        alert("Successfully Booked! Thank You Sir/Mam!");
                                         reset()
                                         history.push('/dashboard')
                                 }

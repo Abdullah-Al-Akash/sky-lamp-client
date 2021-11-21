@@ -35,7 +35,7 @@ const ManageProducts = () => {
 
         return (
                 <div className="pb-5">
-                        <h4 className="text-center p-5 fw-bold brand-color">Manage All Orders Summary</h4>
+                        <h4 className="text-center p-5 fw-bold brand-color">Manage All Products</h4>
                         <div className="row text-success ">
                                 <h4 className="col-5 fw-bold">Product Name</h4>
                                 <h4 className="col-2 fw-bold">Price</h4>
