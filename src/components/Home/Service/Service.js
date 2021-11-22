@@ -18,7 +18,9 @@ const Service = (props) => {
                                                 <img src={img} className="img-fluid" alt="..." />
                                         </div>
                                         <div className="card-body">
-                                                <h3 className="card-title brand-color fw-bold">{name}</h3>
+                                                <div style={{ height: '80px' }}>
+                                                        <h3 className="card-title brand-color fw-bold">{name}</h3>
+                                                </div>
                                                 <p className="text-start">{description.slice(0, 100)}</p>
                                         </div>
                                         <div className="d-flex h-100 justify-content-between align-items-center p-3 pt-0">
