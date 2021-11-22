@@ -17,7 +17,7 @@ const ExploreMore = () => {
                         <div id="services" className="container mt-5 pt-5 pb-5">
                                 <div className="text-center pb-5 mt-5">
                                         <h4 className="fw-bold text-decoration-underline">Our Best Sellers</h4>
-                                        <h2 className="fw-bold brand-color">POPULAR Choices</h2>
+                                        <h2 className="fw-bold brand-color">Popular Choices</h2>
                                         {/* Show Services by Mapping */}
                                         <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
                                                 {
