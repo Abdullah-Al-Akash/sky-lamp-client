@@ -1,8 +1,8 @@
 # Sky Lamp
 
 Live Link: <a href="https://sky-lamp.web.app/">SKY Lamp</a><br/>
-Live Code Link: <a href="https://github.com/programming-hero-web-course-4/niche-website-client-side-Abdullah-Al-Akash">Live Code Link</a><br/>
-Server Code Link: <a href="https://github.com/programming-hero-web-course-4/niche-website-server-side-Abdullah-Al-Akash">Server Code Link</a>
+Live Code Link: <a href="https://github.com/Abdullah-Al-Akash/sky-lamp-client">Live Code Link</a><br/>
+Server Code Link: <a href="https://github.com/Abdullah-Al-Akash/sky-lamp-server">Server Code Link</a>
 <br>
 <br>
 <h4>Hello!</h4>
